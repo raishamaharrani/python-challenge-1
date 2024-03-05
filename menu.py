@@ -146,16 +146,16 @@ while place_order:
                         quantity = int(quantity)  
                     else:
                         quantity = 1
+            
+                    # Tell the customer that their input isn't valid 
+                        print("Invalid option. Defaulting to 1.") 
 
-                    # Add the item name, price, and quantity to the order list
+                # Add the item name, price, and quantity to the order list
                     order_list.append({
                         "Item name": item_name,
                         "Price": menu_items[menu_selection]["Price"],
                         "Quantity":quantity})
-                    
-                    # Tell the customer that their input isn't valid
-                    print("You did not select a valid menu option. Defaulting to 1.")     
-                    
+
             else:
                 # Tell the customer they didn't select a menu option
                 print ("You did not select a valid menu option")   
@@ -190,15 +190,7 @@ while place_order:
         print("Thank you, will be right out with your order.")
 
                 # Exit the keep ordering question loop
-    place_order = False
-
-                # Tell the customer to try again
-    print ("Please enter a valid input 'y'for Yes and 'n' for no.")
-
-# Print out the customer's order
-print("This is what we are preparing for you.\n")
-
-# Uncomment the following line to check the structure of the order
+        place_order = False
 #print(order)
 
 print("Item name                 | Price  | Quantity")
