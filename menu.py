@@ -133,28 +133,23 @@ while place_order:
                 # 4. Check if the menu selection is in the menu items
                 if menu_selection in menu_items.keys(): 
 
-    
                     # Store the item name as a variable
                     item_name = menu_items[menu_selection]["Item name"]
 
-                
                     # Ask the customer for the quantity of the menu item
                     quantity = input(f"How many {item_name} would you like to order? (Default is 1):")
 
                     # Check if the quantity is a number, default to 1 if not
-                    if quantity.isdigit():
+                if quantity.isdigit():
                         quantity = int(quantity)  
-                    else:
+                else:
                         quantity = 1
-            
-                    # Tell the customer that their input isn't valid 
+                        # Tell the customer that their input isn't valid 
                         print("Invalid option. Defaulting to 1.") 
+                        
 
                 # Add the item name, price, and quantity to the order list
-                    order_list.append({
-                        "Item name": item_name,
-                        "Price": menu_items[menu_selection]["Price"],
-                        "Quantity":quantity})
+                order_list.append({"Item name": item_name,"Price": menu_items[menu_selection]["Price"],"Quantity":quantity}) 
 
             else:
                 # Tell the customer they didn't select a menu option
@@ -186,9 +181,9 @@ while place_order:
                 
                 # Since the customer decided to stop ordering, thank them for
                 # their order
+                print("Thank you, will be right out with your order.")
                 break
-        print("Thank you, will be right out with your order.")
-
+        
                 # Exit the keep ordering question loop
         place_order = False
 #print(order)
