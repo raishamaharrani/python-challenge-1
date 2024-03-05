@@ -16,14 +16,14 @@ In this challenge we have built a program that will help the food truck owner to
     6. Provide customer with the order details and a receipt with total.
 
 ## Results 
-Welcome to the variety food truck.
+    1. Welcome to the variety food truck.
 
-From which menu would you like to order? 
+    2. From which menu would you like to order? 
 
-1: Snacks
-2: Meals
-3: Drinks
-4: Dessert
+    a. Snacks
+    b. Meals
+    c. Drinks
+    d. Dessert
 
 What Snacks item would you like to order?
 Item # | Item name                | Price
@@ -61,11 +61,6 @@ Item # | Item name                | Price
 8      | Coffee - Flat white      | $2.99
 9      | Coffee - Iced            | $3.49
 
-From which menu would you like to order?
-1: Snacks
-2: Meals
-3: Drinks
-4: Dessert
 
 What Dessert item would you like to order?
 Item # | Item name                | Price
@@ -79,6 +74,7 @@ Item # | Item name                | Price
 
 
 Order complete.
+
 Item name                 | Price  | Quantity
 --------------------------|--------|----------
 
